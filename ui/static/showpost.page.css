@@ -1,0 +1,24 @@
+body {
+    font-size: 1.4rem;
+    font-family: verdana,arial,sans-serif;
+}
+#page {
+    padding-top: .75em;
+    max-width: 1200px;
+    min-width: 920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }

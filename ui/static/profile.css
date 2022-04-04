@@ -1,0 +1,36 @@
+body {
+    font-size: 1.4rem;
+    font-family: verdana,arial,sans-serif;
+}
+#page {
+    padding-top: .75em;
+    max-width: 1200px;
+    min-width: 920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+}
+
+
+.header-nav {
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    border: 1px solid #b9b9b9;    
+}
+
+.header-nav a + a {
+    margin-left: 30px;
+}
+
+.content {
+    border-left: 4px solid #b9b9b9;
+    font-size: 15px;
+    padding: 12px;
+    background-color: #56686529;
+    min-height: 85px;
+}

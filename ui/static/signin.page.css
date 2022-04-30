@@ -45,6 +45,20 @@ body {
     justify-content: center;
 }
 
+#nav {
+    text-align: justify;
+    min-width: 100px;
+    padding-top: 15px;
+}
+#nav:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+#nav li {
+    display: inline-block;
+}
+
 .login {
     display: flex;
     flex-direction: column;

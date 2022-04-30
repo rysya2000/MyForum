@@ -31,3 +31,7 @@ type Tag struct {
 	PostID   int
 	Hashtags []string
 }
+
+type Auth struct{
+	
+}

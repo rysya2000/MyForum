@@ -56,3 +56,17 @@ body {
     align-items: center;
     padding: 250px;
 }
+
+#nav {
+    text-align: justify;
+    min-width: 100px;
+    padding-top: 15px;
+}
+#nav:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+/* #nav li {
+    display: inline-block;
+} */

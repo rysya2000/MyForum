@@ -16,6 +16,10 @@ func (app *App) Routes() *http.ServeMux {
 
 	mux.HandleFunc("/signup", app.SignUp)
 	mux.HandleFunc("/signin", app.SignIn)
+	mux.HandleFunc("/signin/github/", app.githubLoginHandler)
+	mux.HandleFunc("/signin/github/callback", app.githubCallbackHandler)
+	mux.HandleFunc("/signin/google/", app.googleLoginHandler)
+	mux.HandleFunc("/signin/google/callback", app.googleCallbackHandler)
 	mux.HandleFunc("/signout", app.SignOut)
 
 	mux.HandleFunc("/profile", app.Profile)

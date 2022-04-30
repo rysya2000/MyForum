@@ -12,6 +12,12 @@ import (
 	_ "github.com/mattn/go-sqlite3"
 )
 
+func init() {
+	if err := internal.ParseEnv(); err != nil {
+		log.Fatal("no .env file found")
+	}
+}
+
 func main() {
 	addr := flag.String("addr", ":8000", "HTTP network address")
 	dsn := flag.String("dsn", "forum.db", "database")

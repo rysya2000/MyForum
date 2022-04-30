@@ -26,7 +26,7 @@ func (app *App) Home(w http.ResponseWriter, r *http.Request) {
 		app.serverError(w, err)
 		return
 	}
-
+	app.InfoLog.Printf("Cookie: %v", app.CookieGet(r))
 	app.render(w, r, "home.page.html", &TemplateData{
 		IsAuth: app.CookieGet(r),
 		Posts:  p,
